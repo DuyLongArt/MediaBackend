@@ -37,7 +37,7 @@ EXPOSE 8022
 
 # Environment variables with defaults (can be overridden)
 ENV PORT=8022
-ENV MINIO_ENDPOINT=minio:9000
+ENV MINIO_ENDPOINT=minio:9100
 ENV MINIO_USE_SSL=false
 
 # Run the binary
