@@ -1,0 +1,7 @@
+2026/01/11 09:44:08 ✓ Connected to MinIO at 192.168.22.4:9100
+2026/01/11 09:44:08 ✓ Bucket exists: music
+2026/01/11 09:44:08 ✓ Bucket exists: images
+2026/01/11 09:44:08 🎵 Media Streaming Server starting on http://localhost:8022
+2026/01/11 09:44:08 ☁️  MinIO Music: music
+2026/01/11 09:44:08 ☁️  MinIO Images: images
+2026/01/11 09:44:08 Server failed to start: listen tcp :8022: bind: address already in use
