@@ -45,6 +45,31 @@ go run main.go
 
 The server will start on `http://localhost:8080`.
 
+## 🐳 Deployment with Docker
+
+### Using Docker Compose (Recommended)
+
+This is the easiest way to run the application with a local MinIO instance.
+
+1.  Build and start the services:
+
+    ```bash
+    docker-compose up --build -d
+    ```
+
+2.  Access the application:
+
+    *   **Media Backend**: `http://localhost:8080`
+    *   **MinIO Console**: `http://localhost:9001` (User: `minioadmin`, Pass: `minioadmin`)
+
+    The `docker-compose.yml` automatically creates `music` and `images` buckets for you.
+
+3.  Stop the services:
+
+    ```bash
+    docker-compose down
+    ```
+
 ## ⚙️ Configuration
 
 Create a `.env` file or set environment variables:

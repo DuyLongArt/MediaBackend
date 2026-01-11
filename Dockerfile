@@ -33,10 +33,10 @@ COPY --from=builder /app/mediaserver .
 COPY --from=builder /app/.env.example .env.example
 
 # Expose port
-EXPOSE 8080
+EXPOSE 8022
 
 # Environment variables with defaults (can be overridden)
-ENV PORT=8080
+ENV PORT=8022
 ENV MINIO_ENDPOINT=minio:9000
 ENV MINIO_USE_SSL=false
 
