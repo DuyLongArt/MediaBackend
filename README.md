@@ -76,12 +76,12 @@ Create a `.env` file or set environment variables:
 
 ```bash
 # Server Configuration
-PORT=8080
+PORT=8022
 
 # MinIO Configuration
-MINIO_ENDPOINT=localhost:9098
-MINIO_ACCESS_KEY=minioadmin
-MINIO_SECRET_KEY=minioadmin
+MINIO_ENDPOINT=backend.duylong.art:9100/media
+MINIO_ACCESS_KEY=duylongadmin
+MINIO_SECRET_KEY=duylongpass
 MINIO_USE_SSL=false
 MINIO_MUSIC_BUCKET=music
 MINIO_IMAGE_BUCKET=images

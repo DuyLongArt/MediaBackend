@@ -32,7 +32,7 @@ type Config struct {
 // InitMinIO initializes the MinIO client with configuration from environment variables
 func InitMinIO() error {
 	config := Config{
-		Endpoint:        getEnv("MINIO_ENDPOINT", "192.168.22.4:9100"),
+		Endpoint:        getEnv("MINIO_ENDPOINT", "0.0.0.0:9100"),
 		AccessKeyID:     getEnv("MINIO_ACCESS_KEY", "duylongadmin"),
 		SecretAccessKey: getEnv("MINIO_SECRET_KEY", "duylongpass"),
 		UseSSL:          getEnv("MINIO_USE_SSL", "false") == "true",
