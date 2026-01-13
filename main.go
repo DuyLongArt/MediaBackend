@@ -28,10 +28,10 @@ func main() {
 	})
 
 	// MinIO streaming endpoints (REST API)
-	mux.HandleFunc("/api/music/", handlers.StreamMinIOMusic)
-	mux.HandleFunc("/api/images/", handlers.StreamMinIOImage)
-	mux.HandleFunc("/api/music", handlers.ListMinIOMusic)
-	mux.HandleFunc("/api/images", handlers.ListMinIOImages)
+	mux.HandleFunc("/gomedia/api/music/", handlers.StreamMinIOMusic)
+	mux.HandleFunc("/gomedia/api/images/", handlers.StreamMinIOImage)
+	mux.HandleFunc("/gomedia/api/music", handlers.ListMinIOMusic)
+	mux.HandleFunc("/gomedia/api/images", handlers.ListMinIOImages)
 
 	// Serve test client
 	mux.HandleFunc("/", handlers.ServeTestClient)
