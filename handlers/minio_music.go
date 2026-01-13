@@ -115,7 +115,7 @@ func ListMinIOMusic(w http.ResponseWriter, r *http.Request) {
 			Name:        name,
 			Size:        object.Size,
 			Path:        object.Key,
-			Url:         "/api/music/" + name,
+			Url:         "/gomedia/api/music/" + name,
 			ContentType: getContentType(name),
 		})
 	}

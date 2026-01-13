@@ -99,7 +99,7 @@ func ListMinIOImages(w http.ResponseWriter, r *http.Request) {
 			Name:        name,
 			Size:        object.Size,
 			Path:        object.Key,
-			Url:         "/api/images/" + name,
+			Url:         "/gomedia/api/images/" + name,
 			ContentType: getImageContentType(name),
 		})
 	}
