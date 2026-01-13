@@ -18,7 +18,7 @@ import (
 // StreamMinIOMusic handles streaming music files from MinIO with HTTP range request support
 func StreamMinIOMusic(w http.ResponseWriter, r *http.Request) {
 	// Extract filename from URL path
-	filename := strings.TrimPrefix(r.URL.Path, "/api/music/")
+	filename := strings.TrimPrefix(r.URL.Path, "/gomedia/api/music/")
 	if filename == "" {
 		http.Error(w, "Filename is required", http.StatusBadRequest)
 		return

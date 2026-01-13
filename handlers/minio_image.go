@@ -17,7 +17,7 @@ import (
 // StreamMinIOImage handles streaming image files from MinIO with caching support
 func StreamMinIOImage(w http.ResponseWriter, r *http.Request) {
 	// Extract filename from URL path
-	filename := strings.TrimPrefix(r.URL.Path, "/api/images/")
+	filename := strings.TrimPrefix(r.URL.Path, "/gomedia/api/images/")
 	if filename == "" {
 		http.Error(w, "Filename is required", http.StatusBadRequest)
 		return
